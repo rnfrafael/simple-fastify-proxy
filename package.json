@@ -1,0 +1,20 @@
+{
+	"name": "proxy-heroku",
+	"module": "src/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@fastify/http-proxy": "^11.0.1",
+		"dotenv": "^16.4.7",
+		"fastify": "^5.2.1"
+	},
+	"scripts": {
+		"start": "bun run src/index.ts",
+		"dev": "bunx tsx --watch src/index.ts"
+	}
+}
